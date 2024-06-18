@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_title_text"
+        android:textAlignment="center"
+        android:textColor="#0097A7"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edittext_code_hint"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edittext_name_hint"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edittext_lastname_hint"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edittext_email_hint"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edittext_age_hint"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:onClick="onclickInsert"
+        android:text="@string/button_insert_text"
+        tools:ignore="TextViewEdits,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:onClick="onclickSearch"
+        android:text="@string/button_search_text"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:onClick="onclickUpdate"
+        android:text="@string/button_update_text"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:onClick="onclickDelete"
+        android:text="@string/button_delete_text"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonSelectAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSelectAll"
+        android:text="@string/button_selectall_text" />
+
+</LinearLayout>
